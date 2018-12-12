@@ -5,7 +5,6 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 
@@ -36,7 +35,7 @@ public class KafkaSubscribeConsumer {
         }
     }
 
-    static KafkaConsumer<String, String> createKafkaConsumer() {
+    public static KafkaConsumer<String, String> createKafkaConsumer() {
 
         Properties properties = new Properties();
         properties.put("bootstrap.servers", "localhost:9092");
